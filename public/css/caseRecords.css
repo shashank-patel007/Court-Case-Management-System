@@ -1,0 +1,36 @@
+html,body
+{
+  width: 100%;
+}
+
+.case_records
+{
+	margin-left: 5%;
+	margin-top: 5%;
+	margin-right: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.my-card
+{
+	font-family: 'Special Elite', cursive;
+	background-image:linear-gradient( to bottom ,#d6ae7b, #eacda3);
+	  color: #5b342e;
+	  font-weight: bold;
+
+}
+
+.my-card-title
+{
+	font-weight: bold;
+
+}
+
+h3
+{
+	margin-left: 5%;
+	font-family: 'Special Elite', cursive;
+  	font-weight: bolder;
+  	text-decoration: underline;	
+}

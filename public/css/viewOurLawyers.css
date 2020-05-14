@@ -1,0 +1,235 @@
+html,body
+{
+  height: 100%; 
+  width: 100%;
+}
+
+h3
+{
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.my-input:hover
+{
+  transition: all .4s ease-in-out;
+   transform: scale(1.02);
+} 
+
+.my-btn
+{
+  background-color: #800000;
+  color: white;
+  font-family:'Special Elite', cursive;
+  border-radius: 20px;
+  padding: 8px 8px;
+  width: 20;
+  margin-left: 1%;
+}
+
+.my-input
+{
+  padding:8px 8px;
+  font-family: 'Special Elite', cursive;
+}
+
+.my-div
+{
+  margin-left:40%;
+  margin-top: 2%;
+}
+
+.my-a
+{
+  text-decoration-line: underline;
+  font-family:'Special Elite', cursive;
+  color: black;
+  font-size: x-large;
+}
+
+.dashboard-cards {
+  position: relative;
+  padding-bottom: 50px;
+  margin: 0 !important;
+}
+
+.dashboard-cards .card {
+
+  font-family: 'Special Elite', cursive;
+  font-weight: bolder;
+  background: #ffffff;
+  display: inline-block;
+  -webkit-perspective: 100000;
+  perspective: 100000;
+  z-index: 20;
+  padding: 0 !important;
+  margin: 10px 25px 25px 40px;
+  position: relative;
+  text-align: left;
+  -webkit-transition: all 0.3s 0s ease-in;
+  transition: all 0.3s 0s ease-in;
+  z-index: 1;
+  width: calc(33.33333333% - 10px);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.dashboard-cards .card:hover {
+  box-shadow: 0 20px 15px -15px rgba(31, 31, 31, 0.5);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.dashboard-cards .card .card-title {
+  background: #ffffff;
+  padding: 20px 15px;
+  position: relative;
+  z-index: 0;
+}
+
+.dashboard-cards .card .card-title h2 {
+  font-size: 23px;
+  letter-spacing: -0.05em;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-cards .card .card-title h2 small {
+  display: block;
+  font-size: 17px;
+  margin-top: 8px;
+  letter-spacing: -0.025em;
+}
+
+.dashboard-cards .card .card-description {
+  position: relative;
+  font-size: 18px;
+  border-top: 1px solid #ddd;
+  padding: 10px 15px 0 15px;
+}
+
+.dashboard-cards .card .card-actions {
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+  padding: 10px;
+  text-align: center;
+}
+
+.dashboard-cards .card .card-flap {
+/*  border:1px solid black;*/
+  background: #d9d9d9;
+  position: absolute;
+  width: 100%;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+.dashboard-cards .card .flap1 {
+  -webkit-transition: all 0.3s 0.3s ease-out;
+  transition: all 0.3s 0.3s ease-out;
+  z-index: -1;
+}
+
+.dashboard-cards .card .flap2 {
+  -webkit-transition: all 0.3s 0s ease-out;
+  transition: all 0.3s 0s ease-out;
+  z-index: -2;
+}
+
+.dashboard-cards.showing .card {
+  cursor: pointer;
+  opacity: 0.45;
+  -webkit-transform: scale(0.88);
+  transform: scale(0.88);
+}
+
+.dashboard-cards .no-touch .dashboard-cards.showing .card:hover {
+  opacity: 0.94;
+  -webkit-transform: scale(0.92);
+  transform: scale(0.92);
+}
+
+.dashboard-cards .card.d-card-show {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.dashboard-cards .card.d-card-show .card-flap {
+  background: #ffffff;
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.dashboard-cards .card.d-card-show .flap1 {
+  -webkit-transition: all 0.3s 0s ease-out;
+  transition: all 0.3s 0s ease-out;
+}
+
+.dashboard-cards .card.d-card-show .flap2 {
+  -webkit-transition: all 0.3s 0.2s ease-out;
+  transition: all 0.3s 0.2s ease-out;
+}
+
+.dashboard-cards .card .task-count {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 22px;
+  right: 10px;
+  background: #ecf0f1;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 100%;
+  color: #333333;
+  font-weight: 600;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.dashboard-cards .task-list {
+  padding: 0 !important;
+}
+
+.dashboard-cards .task-list li {
+  padding: 10px 0;
+  padding-left: 10px;
+  margin: 3px 0;
+  list-style-type: none;
+  border-bottom: 1px solid #e9ebed;
+  border-left: 3px solid #5b342e;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.dashboard-cards .task-list li:hover {
+  background: #ecf0f1;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.dashboard-cards .task-list li span {
+  float: right;
+  color: #f36525;
+  margin-right: 5px;
+}
+
+.dashboard-cards.showing .card.d-card-show .task-count {
+  color: #ffffff;
+  background: #f36525;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.dashboard-cards .card-actions .btn {
+  color: #5b342e;;
+}
+
+.dashboard-cards .card-actions .btn:hover {
+  color: #5b342e;;
+}
+
